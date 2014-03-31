@@ -4,6 +4,12 @@
 </head>
 <body>
 <h1>Welcome</h1>
+<ul>
+  <% items.each do |item| %>
+    <li><%= item %></li>
+  <% end %>
+</ul>
 <a href="items/new">Add a Product</a>
+
 </body>
 </html>
