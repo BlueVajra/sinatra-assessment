@@ -9,7 +9,9 @@ feature "Item management" do
 
     visit '/'
     expect(page).to have_content("Welcome")
-    click_on('Add a Product')
+    click_on("Add a Product")
+    fill_in "new_product", with: "Cory's Awesome Product"
+    click_on("Create Product")
 
 
   end
